@@ -1,0 +1,20 @@
+---
+version: "2.4"
+
+services:
+  notebook:
+    image: pando85/docker-jupyterlab-custom:latest
+    environment:
+      - MAX_UPLOAD_FILE_SIZE=100M
+    restart: always
+    volumes:
+      - workspace_data:/home/jovyan/work
+    ports:
+      - 8888:8888
+    command:
+      - jupyter
+      - lab
+      - --NotebookApp.token=''
+
+volumes:
+  workspace_data:
