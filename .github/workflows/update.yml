@@ -4,9 +4,6 @@ on:
   schedule:
     - cron:  '*/15 * * * *'
 
-env:
-  IMAGE_NAME: pando85/docker-jupyterlab-custom
-
 jobs:
   update:
     runs-on: ubuntu-latest
