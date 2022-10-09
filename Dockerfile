@@ -1,4 +1,4 @@
-FROM jupyter/scipy-notebook:f3079808ca8c
+FROM jupyter/scipy-notebook:aarch64-ubuntu-22.04
 
 LABEL maintainer="Pando85 <pando855@gmail.com>"
 
