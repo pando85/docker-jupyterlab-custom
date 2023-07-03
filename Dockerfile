@@ -1,4 +1,4 @@
-FROM jupyter/scipy-notebook:hub-4.0.1
+FROM jupyter/scipy-notebook:notebook-6.5.4
 
 LABEL maintainer="Pando85 <pando855@gmail.com>"
 
